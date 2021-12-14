@@ -3,6 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {  message } from 'antd';
+ 
+message.config({
+ duration: 2,// 持续时间
+ maxCount: 3, // 最大显示数, 超过限制时，最早的消息会被自动关闭
+ top: 45 // 到页面顶部距离
+});
 
 ReactDOM.render(
   <React.StrictMode>

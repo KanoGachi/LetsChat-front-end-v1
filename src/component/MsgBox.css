@@ -1,0 +1,33 @@
+.MsgBox {
+  flex: 2;
+  padding: 1vmin 2vmin 2vmin; /*top|left,right|bottom*/
+  display: flex;
+  flex-direction: column-reverse;
+  overflow-y: scroll;
+  /*解决safi*/
+  -webkit-overflow-scrolling: touch;
+}
+
+.MsgBox::-webkit-scrollbar {
+  display: none;
+}
+
+.WordBox::-webkit-scrollbar {
+  display: none;
+}
+
+.SedMsg {
+  width: 100%;
+  margin-top: 1vmin;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.RevMsg {
+  width: 100%;
+  margin-top: 1vmin;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}

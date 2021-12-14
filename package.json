@@ -1,11 +1,18 @@
 {
+  "proxy": "http://47.106.168.238:8080",
   "name": "mywebapp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@bit/bit.evangelist.input.input": "^0.1.1",
+    "@emotion/react": "^11.7.0",
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.2.3",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "antd": "^4.17.3",
+    "axios": "^0.24.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",

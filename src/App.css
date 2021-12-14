@@ -1,38 +1,47 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-family: "Microsoft YaHei Light";
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.App-topbar {
+  flex: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-board {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.App-sidebar {
+  flex: 1 0 auto;
+  min-width: max-content;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.App-hiddenSideBar {
+  display: none;
+}
+
+.App-sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.App-chat {
+  /* flex: auto; */
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  /* overflow-y: auto; */
+}
+
+.App-hiddenChat {
+  display: none;
 }
